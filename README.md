@@ -2,8 +2,7 @@
 
 This repository hosts a French newspaper crawler based on [`Scrapy`](http://scrapy.org/) framework.
 
-The web crawler is autonomous as after being launched, it crawls target sources every hours for new articles (time step parameter is tunable).
-Each scraped article is stored in a `json` file and optionally in a `sqlite` database.
+The web crawler crawls the target sources every hours for new articles (time step parameter can be tuned). Scraped articles are stored individually in `json` files and optionally in a `sqlite` database.
 
 Stored article example:
 
@@ -22,11 +21,10 @@ Stored article example:
 
 6 sources have been implemented: [Le Monde](http://www.lemonde.fr), [Le Figaro](http://www.lefigaro.fr), [Libération](http://www.liberation.fr), [Futura-Sciences](http://www.futura-sciences.com), [Le Nouvel Obs](http://www.nouvelobs.com) and [Télérama](http://www.telerama.fr).
 
-Crawling scheme looks like this:
-- Get new articles from RSS feeds
-- Scrape and save them
-- Wait an hour
-- Loop again
+Crawling scheme consists of repeating:
+1) Get new articles from RSS feeds
+2) Scrape and save them
+3) Wait an hour
 
 ## Installation
 
