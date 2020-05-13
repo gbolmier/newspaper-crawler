@@ -1,4 +1,4 @@
-# :mag_right: newspaper-crawler
+# :spider: newspaper-crawler
 
 This repository hosts a French newspaper crawler based on [`Scrapy`](http://scrapy.org/) framework.
 
